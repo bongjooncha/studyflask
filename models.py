@@ -8,6 +8,6 @@ class Member(db.Model):
     age = db.Column(db.Integer, nullable = False)
 
     # Member 클래스의 생성자 수정
-def __init__(self, name=None, age=None):
-    self.name = name
-    self.age = age
+    def __init__(self, name=None, age=None):
+        self.name = name
+        self.age = age

@@ -16,12 +16,16 @@ db.init_app(app)
 def home():
     # Elice, Dodo, Cheshire, Queen 데이터를 추가하세요.
     member = Member("Elice",15)
+    member.id = 1
     db.session.add(member)
     member1 = Member("Dodo",16)
+    member1.id = 2
     db.session.add(member1)
     member2 = Member("Cheshire",17)
+    member2.id = 3
     db.session.add(member2)
     member3 = Member("Queen",18)
+    member3.id = 4
     db.session.add(member3)  
     # 추가한 데이터를 DB에 저장하세요.
     db.session.commit()
