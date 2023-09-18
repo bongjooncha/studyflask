@@ -2,7 +2,6 @@
 from db_connect import db
 
 class Member(db.Model):
-    __tablename__ = "member"
     id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     name = db.Column(db.String(20), nullable = False)
     age = db.Column(db.Integer, nullable = False)
